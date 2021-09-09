@@ -2,13 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+// import{ListadoClientesComponent} from './clientes/listado-clientes/listado-clientes.component'
+import {ClientesModule} from './clientes/clientes.module';
+import {FacturasModule} from './facturas/facturas.module';
+import {NotasModule} from './notas/notas.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ClientesModule,
+    FacturasModule,
+    NotasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
