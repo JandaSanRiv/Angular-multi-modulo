@@ -7,6 +7,9 @@ import {ClientesModule} from './clientes/clientes.module';
 import {FacturasModule} from './facturas/facturas.module';
 import {NotasModule} from './notas/notas.module';
 
+
+import {AppRoutingModule} from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +18,8 @@ import {NotasModule} from './notas/notas.module';
     BrowserModule,
     ClientesModule,
     FacturasModule,
-    NotasModule
+    NotasModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
